@@ -10,9 +10,10 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            CarTest();
+            //CarTest();
             //ColorTest();
             //BrandTest();
+            //UserTest();
 
             Console.ReadLine();
         }
@@ -30,7 +31,7 @@ namespace ConsoleUI
         private static void ColorTest()
         {
             ColorManager colorManager = new ColorManager(new EfColorDal());
-           
+
             foreach (var color in colorManager.GetAll().Data)
             {
                 Console.WriteLine(color.ColorName);
@@ -51,7 +52,7 @@ namespace ConsoleUI
             }
             else
             {
-                Console.WriteLine(result.Message); 
+                Console.WriteLine(result.Message);
             }
             /*foreach (var car in carManager.GetCarsByColorId(2))
             {
@@ -73,6 +74,20 @@ namespace ConsoleUI
             //    Console.WriteLine(car.CarName);
             //}
         }
+        private static void UserTest()
+        {
+            UserManager userManager = new UserManager(new EfUserDal());
+
+            var result = userManager.GetAll();
+
+            if (result.Success == true)
+            {
+                foreach (var user in result.Data)
+                {
+                    Console.WriteLine(user.FirstName);
+                }
+
+            }
+        }
     }
 }
- 

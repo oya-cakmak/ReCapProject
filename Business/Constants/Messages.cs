@@ -24,5 +24,20 @@ namespace Business.Constants
         public static string CarDailyPriceInValid = "Günlük fiyatı 0 dan büyük olmalıdır.";
         public static string MaintenanceTime = "Sistem bakımda";
 
+        public static string UserAdded = "Kullanıcı eklendi";
+        public static string UserUpdated = "Kullanıcı güncellendi";
+        public static string UserDeleted = "Kullanıcı silindi";
+        public static string UserListed = "Kullanıcı listelendi";
+
+        public static string CustomerAdded = "Müsteri eklendi";
+        public static string CustomerUpdated = "Müsteri güncellendi";
+        public static string CustomerDeleted = "Müsteri silindi";
+        public static string CustomerListed = "Müsteri listelendi";
+
+        public static string RentalAdded = "Kiralama bilgisi eklendi";
+        public static string RentalUpdated = "Kiralama bilgisi güncellendi";
+        public static string RentalDeleted = "Kiralama bilgisi silindi";
+        public static string RentalReturnDateError = "Araç teslim edilmemiştir.";
+        
     }
 }
